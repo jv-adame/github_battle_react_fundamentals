@@ -1,7 +1,7 @@
 const React = require("react");
 const PropTypes = require('prop-types');
 const Link = require("react-router-dom").Link;
-const config = require("./config.js");
+const config = require("../utils/config.js");
 const PlayerPreview = require("./PlayerPreview.js");
 
 

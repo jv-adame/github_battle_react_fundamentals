@@ -4,6 +4,7 @@ const queryString = require("query-string");
 const api = require("../utils/api");
 const Link = require("react-router-dom").Link;
 const PlayerPreview = require("./PlayerPreview.js");
+const Loading = require("./Loading");
 
 
 function Profile (props){
@@ -63,7 +64,7 @@ class Results extends React.Component{
             if (results === null){
                 return this.setState(function(){
                     return {
-                        error: "This wasn't supposed to be here, Check that both users exist on GitHub",
+                        error: "This wasn't supposed to happen, Check that both users exist on GitHub",
                         loading: false,
                     }
                 });
@@ -87,7 +88,7 @@ class Results extends React.Component{
         let loading = this.state.loading;
 
         if (loading === true){
-            return <p>loading</p>
+            return <Loading />
             
         }
 
