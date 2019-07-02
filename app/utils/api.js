@@ -1,5 +1,5 @@
 const axios = require("axios");
-const config = require("../components/config.js"),
+const config = require("./config.js"),
     githubKeys = config.github_api_key,
     id = githubKeys.id,
     sec = githubKeys.secret;
