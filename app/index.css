@@ -147,3 +147,7 @@ a {
 .selected{
     color: #d0021b;
 }
+
+.player h3{
+    text-align: center;
+}
