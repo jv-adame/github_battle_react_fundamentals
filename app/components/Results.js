@@ -3,7 +3,8 @@ const PropTypes = require('prop-types');
 
 class Results extends React.Component{
     render(){
-        console.log(this.props)
+        let players = queryString.parse(this.props.location.search)
+        console.log(players);
         return(
             <div>Results</div>
         )

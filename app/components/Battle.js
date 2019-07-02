@@ -1,6 +1,7 @@
 const React = require("react");
 const PropTypes = require('prop-types');
 const Link = require("react-router-dom").Link;
+const config = require("./config.js");
 
 function PlayerPreview(props){
     return(
